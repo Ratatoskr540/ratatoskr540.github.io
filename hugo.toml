@@ -1,0 +1,36 @@
+baseURL = "https://northmatrix.github.io"
+languageCode = "en-us"
+title = "Jamie Grant"
+theme = "aurora"
+
+[markup]
+  [markup.highlight]
+    style = "onedark"
+    noClasses = false
+    lineNos = true
+    lineNumbersInTable = false
+    tabWidth = 2
+
+[params]
+  author = "Jamie Grant"
+  description = "I like maths & hacking."
+  avatar = "/img/avatar.png"
+
+  [[params.links]]
+    name  = "GitHub"
+    url   = "https://github.com/northmatrix"
+    icon  = "github"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3

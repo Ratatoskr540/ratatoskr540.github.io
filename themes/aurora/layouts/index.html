@@ -1,0 +1,54 @@
+{{ define "main" }}
+
+<section class="hero">
+  <div class="avatar-ring">
+    {{ if .Site.Params.avatar }}
+    <img src="{{ .Site.Params.avatar | relURL }}" alt="{{ .Site.Params.author }}">
+    {{ else }}
+    <div class="avatar-placeholder">{{ substr .Site.Params.author 0 1 }}</div>
+    {{ end }}
+  </div>
+
+  <div>
+    <h1 class="hero-name aurora-text">{{ .Site.Params.author }}</h1>
+  </div>
+
+  <p class="hero-bio">{{ .Site.Params.description }}</p>
+
+  {{ with .Site.Params.links }}
+  <div class="social-links">
+    {{ range . }}{{ partial "social-link.html" . }}{{ end }}
+  </div>
+  {{ end }}
+</section>
+
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ if $posts }}
+<section>
+  <p class="section-label">Recent posts</p>
+  <div class="post-list">
+    {{ range first 5 $posts }}
+    <a href="{{ .RelPermalink }}" class="post-card">
+      <div class="post-card-left">
+        <span class="post-card-title">{{ .Title }}</span>
+        {{ with .Params.tags }}
+        <div class="post-card-tags">
+          {{ range . }}{{ partial "tag.html" . }}{{ end }}
+        </div>
+        {{ end }}
+      </div>
+      <span class="post-card-date">{{ .Date.Format "Jan 2006" }}</span>
+    </a>
+    {{ end }}
+  </div>
+  {{ if gt (len $posts) 5 }}
+  <div style="margin-top: 1.5rem;">
+    <a href="{{ "/posts/" | relURL }}" class="social-link" style="display:inline-flex;">
+      All posts →
+    </a>
+  </div>
+  {{ end }}
+</section>
+{{ end }}
+
+{{ end }}

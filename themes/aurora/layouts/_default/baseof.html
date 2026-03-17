@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="{{ "/" | relURL }}" class="nav-logo aurora-text">{{ .Site.Title }}</a>
+    <ul class="nav-links">
+      {{ range .Site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} class="active"{{ end }}>
+          {{ .Name }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    {{ block "main" . }}{{ end }}
+  </div>
+</main>
+
+<footer>
+  <p>© {{ now.Year }} {{ .Site.Params.author }} — built with <a href="https://gohugo.io" style="color: var(--aurora-5);">Hugo</a></p>
+</footer>
+
+<script src="{{ "/js/tags.js" | relURL }}"></script>
+</body>
+</html>

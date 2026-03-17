@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<h1 class="post-title aurora-text-static" style="margin-bottom: 2rem;">Posts</h1>
+
+{{ if .Pages }}
+<div class="post-list">
+  {{ range .Pages }}
+  <a href="{{ .RelPermalink }}" class="post-card">
+    <div class="post-card-left">
+      <span class="post-card-title">{{ .Title }}</span>
+      {{ with .Params.tags }}
+      <div class="post-card-tags">
+        {{ range . }}{{ partial "tag.html" . }}{{ end }}
+      </div>
+      {{ end }}
+    </div>
+    <span class="post-card-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+  </a>
+  {{ end }}
+</div>
+{{ else }}
+<p style="color: var(--muted);">No posts yet. Check back soon.</p>
+{{ end }}
+
+{{ template "_internal/pagination.html" . }}
+
+{{ end }}

@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<div class="about-header">
+  <div class="about-avatar">
+    {{ if .Site.Params.avatar }}
+    <img src="{{ .Site.Params.avatar | relURL }}" alt="{{ .Site.Params.author }}">
+    {{ else }}
+    <div class="avatar-placeholder">{{ substr .Site.Params.author 0 1 }}</div>
+    {{ end }}
+  </div>
+  <div>
+    <h1 class="about-intro-name aurora-text-static">{{ .Site.Params.author }}</h1>
+    <p class="about-intro-role">{{ .Site.Params.description }}</p>
+  </div>
+</div>
+
+<div class="post-content">
+  {{ .Content }}
+</div>
+
+{{ with .Site.Params.links }}
+<div style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+  <p class="section-label">Find me online</p>
+  <div class="social-links" style="justify-content: flex-start;">
+    {{ range . }}{{ partial "social-link.html" . }}{{ end }}
+  </div>
+</div>
+{{ end }}
+
+{{ end }}
