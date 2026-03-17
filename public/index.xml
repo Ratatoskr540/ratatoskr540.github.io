@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jamie Grant</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Jamie Grant</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/posts/ai/</link>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ai/</guid>
+      <description>&lt;h1 id=&#34;ai&#34;&gt;AI&lt;/h1&gt;&#xA;&lt;p&gt;AI blah blah blah&amp;hellip;.&lt;/p&gt;&#xA;&lt;h1 id=&#34;mathematics&#34;&gt;Mathematics&lt;/h1&gt;&#xA;&lt;p&gt;Mathematics blah blah blah&amp;hellip;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cryptography</title>
+      <link>http://localhost:1313/posts/cryptography/</link>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cryptography/</guid>
+      <description>&lt;h1 id=&#34;cryptography&#34;&gt;Cryptography&lt;/h1&gt;&#xA;&lt;p&gt;Cryptography blah blah blah&amp;hellip;.&lt;/p&gt;&#xA;&lt;h1 id=&#34;mathematics&#34;&gt;Mathematics&lt;/h1&gt;&#xA;&lt;p&gt;Mathematics blah blah blah&amp;hellip;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pwn</title>
+      <link>http://localhost:1313/posts/pwn/</link>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/pwn/</guid>
+      <description>&lt;h1 id=&#34;binary&#34;&gt;Binary&lt;/h1&gt;&#xA;&lt;p&gt;Binary blah blah blah&amp;hellip;.&lt;/p&gt;&#xA;&lt;h1 id=&#34;system-exploitation&#34;&gt;System Exploitation&lt;/h1&gt;&#xA;&lt;p&gt;System Exploitation blah blah blah&amp;hellip;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Hey, I&amp;rsquo;m Jamie.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-i-do&#34;&gt;What I do&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m currently a student studying Mathematics at university. Aside from mathematics I also program in Rust, Python, C and Assembly, and compete in CTF competitions mainly under the categories of pwn and crypto.&lt;/p&gt;&#xA;&lt;h2 id=&#34;this-site&#34;&gt;This site&lt;/h2&gt;&#xA;&lt;p&gt;This blog is where I post whatever I&amp;rsquo;m working on. Expect posts about:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Systems programming and system exploitation&lt;/li&gt;&#xA;&lt;li&gt;Mathematics and cryptography&lt;/li&gt;&#xA;&lt;li&gt;Maybe some new hardware projects&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

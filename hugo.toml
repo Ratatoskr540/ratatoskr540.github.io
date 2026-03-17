@@ -21,6 +21,21 @@ theme = "aurora"
     url   = "https://github.com/northmatrix"
     icon  = "github"
 
+  [[params.links]]
+    name  = "TryHackMe"
+    url   = "https://tryhackme.com/p/Northmatrix"
+    icon  = "tryhackme"
+
+  [[params.links]]
+    name  = "CryptoHack"
+    url   = "https://cryptohack.org/user/northmatrix"
+    icon  = "cryptohack"
+
+  [[params.links]]
+    name  = "pwn.college"
+    url   = "https://pwn.college/hacker/127307"
+    icon  = "pwncollege"
+
 [menu]
   [[menu.main]]
     name = "Home"
