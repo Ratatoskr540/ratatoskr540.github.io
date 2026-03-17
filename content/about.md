@@ -15,4 +15,4 @@ This blog is where I post whatever I'm working on. Expect posts about:
 
 - Systems programming and system exploitation
 - Mathematics and cryptography
-- Anything else I decide to write about
+- Maybe some new hardware projects
